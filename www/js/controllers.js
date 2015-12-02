@@ -2,13 +2,17 @@ angular.module('starter.controllers', [])
 
 .controller('ContactsCtrl', function($scope,$cordovaContacts) {
 
+  $scope.phoneContacts = [];
+  $scope.contacts = [];
+
   $scope.getContacts = function() {
-    $scope.phoneContacts = [];
+   
      function onSuccess(contacts) {
-      for (var i = 0; i < 10; i++) {
+      for (var i = 0; i < contacts.length; i++) {
         var contact = contacts[i];
-        $scope.phoneContacts.push(contact);
+        $scope.contacts.push(contact);
       }
+      $scope.loadMoreContacts();
     };
 
     function onError(contactError) {
@@ -20,8 +24,17 @@ angular.module('starter.controllers', [])
 
     $cordovaContacts.find(options).then(onSuccess, onError);
   };
-
-  document.addEventListener("deviceready", $scope.getContacts, false);
+  $scope.loadMoreContacts = function()
+  {
+    var len = $scope.phoneContacts.length;
+    for (var i = 0; i < 10; i++) {
+      $scope.$apply(function(){
+        var contact = $scope.contacts[len + i];
+        $scope.phoneContacts.push(contact);
+      });
+    };
+  }
+document.addEventListener("deviceready", $scope.getContacts, false);
 })
 
 .controller('ChatsCtrl', function($scope, Chats) {

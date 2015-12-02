@@ -1,6 +1,7 @@
 <ion-view view-title="Dashboard">
   <ion-content class="padding">
-     <button class="button" ng-click="getContacts()">Get My Contacts</button>
+  <p>{{phoneContacts.length}}
+     <button class="button" ng-click="loadMoreContacts()">Get My Contacts</button>
           <div class="list" ng-show="phoneContacts">
             <div class="card" ng-repeat="contact in phoneContacts">
               <div class="item item-divider">
@@ -18,5 +19,6 @@
               </div>
             </div>
           </div>
+        
   </ion-content>
 </ion-view>
