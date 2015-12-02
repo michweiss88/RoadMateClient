@@ -1,24 +1,13 @@
 <ion-view view-title="Dashboard">
   <ion-content class="padding">
-  <p>{{phoneContacts.length}}
      <button class="button" ng-click="loadMoreContacts()">Get My Contacts</button>
           <div class="list" ng-show="phoneContacts">
-            <div class="card" ng-repeat="contact in phoneContacts">
-              <div class="item item-divider">
-                {{ contact.name.formatted }}
-              </div>
-              <div class="item item-text-wrap">
-                <p><strong>Phone(s)</strong></p>
-                <div ng-repeat="number in contact.phoneNumbers">
-                  <p>{{ number.value }}</p>
-                </div>
-                <p><strong>Email(s)</strong></p>
-                <div ng-repeat="email in contact.emails">
-                  <p>{{ email.value }}</p>
-                </div>
+            <div class="item-avatar item-icon-right" ng-repeat="contact in phoneContacts">
+              <div class="item item-divider" ng-repeat="number in contact.phoneNumbers">
+                <strong>{{ contact.name.formatted }}, Phone: {{ number.value }}.</strong>
               </div>
             </div>
           </div>
-        
+         <!--  <ion-infinite-scroll on-infinite="loadMoreContacts()" distance="4%"> </ion-infinite-scroll> -->
   </ion-content>
 </ion-view>
