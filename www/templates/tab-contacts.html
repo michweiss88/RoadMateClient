@@ -2,10 +2,8 @@
   <ion-content class="padding">
      <button class="button" ng-click="loadMoreContacts()">Get My Contacts</button>
           <div class="list" ng-show="phoneContacts">
-            <ion-item class="item-avatar item-icon-right" ng-repeat="contact in phoneContacts">
-              <div class="item" ng-repeat="number in contact.phoneNumbers">
-                <strong>{{ contact.name.formatted }}, Phone: {{ number.value }}.</strong>
-              </div>
+            <ion-item class="item item-avatar item-icon-right" ng-repeat="contact in phoneContacts">
+              <strong ng-repeat="number in contact.phoneNumbers">{{ contact.name.formatted }}, Phone: {{ number.value }}.</strong>
             </ion-item>
           </div>
          <!--  <ion-infinite-scroll on-infinite="loadMoreContacts()" distance="4%"> </ion-infinite-scroll> -->
