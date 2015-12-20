@@ -4,4 +4,8 @@
     <ReferenceCachePath>C:\Users\Michael\AppData\Local\Temp\RodeMateClient_refcache</ReferenceCachePath>
     <ToolsVersionPromptShown>1.7</ToolsVersionPromptShown>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Android'">
+    <DebuggerFlavor>RippleNexus7</DebuggerFlavor>
+    <AndroidEmulatorID>AndroidDevice;Device</AndroidEmulatorID>
+  </PropertyGroup>
 </Project>
