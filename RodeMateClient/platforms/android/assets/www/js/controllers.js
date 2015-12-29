@@ -1,30 +1,5 @@
 angular.module('starter.controllers', [])
 
-.controller('StartCtrl', function ($scope, $cordovaDevice) {
-    $scope.deviceDetails = {
-        Model:  null,
-        Platform: null,
-        UUID: null,
-        Version: null,
-        Cordova: null
-    }
-
-    document.addEventListener("deviceready", function () {
-
-        $scope.deviceDetails.Cordova = $cordovaDevice.getCordova();
-
-        $scope.deviceDetails.Model = $cordovaDevice.getModel();
-
-        $scope.deviceDetails.Platform = $cordovaDevice.getPlatform();
-
-        $scope.deviceDetails.UUID = $cordovaDevice.getUUID();
-
-        $scope.deviceDetails.Version = $cordovaDevice.getVersion();
-
-    }, false);
-})
-
-
 .controller('DashCtrl', function($scope) {})
 
 .controller('ChatsCtrl', function($scope, Chats) {

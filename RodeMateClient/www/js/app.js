@@ -29,10 +29,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   // Each state's controller can be found in controllers.js
     $stateProvider
 
-    .state('start', {
-        url: "/start",
-        templateUrl: "templates/start.html",
-        controller: 'StartCtrl'
+    .state('signup', {
+        url: "/signup",
+        templateUrl: "app/users/signup.html",
+        controller: 'SignupController'
 
     })
 
@@ -85,6 +85,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/start');
+    $urlRouterProvider.otherwise('/signup');
 
 });

@@ -35,6 +35,7 @@ D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\css \
 D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\img \
 D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\index.html \
 D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\js \
+D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\Lib \
 D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\plugins \
 D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\scripts \
 D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\templates \
@@ -45,6 +46,8 @@ D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\img\i
 D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\js\app.js \
 D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\js\controllers.js \
 D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\js\services.js \
+D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\Lib\ngCordova \
+D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\Lib\ngCordova\ng-cordova.js \
 D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\plugins\org.apache.cordova.device \
 D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\plugins\org.apache.cordova.device\www \
 D:\Projects\tmp\RodeMateClient\RodeMateClient\platforms\android\assets\www\plugins\org.apache.cordova.device\www\device.js \

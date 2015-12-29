@@ -1,1 +1,21 @@
 /* Empty. Add your own CSS if you like */
+#signup_page {
+   
+}
+
+#signup_page #main_logo_holder {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#signup_page #main_logo_holder img{
+  width: 60%;
+}
+
+#signup_page #signup_button{
+    width: 100%;
+}
+
+.road_mate_page{
+     background: #ff00dc;
+}

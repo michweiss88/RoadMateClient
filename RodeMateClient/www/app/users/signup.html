@@ -1,0 +1,17 @@
+﻿<ion-view id="signup_page" class="road_mate_page" view-title="Start">
+    <ion-content>
+        <div id="main_logo_holder">
+            <img src="img/car.png" />
+        </div>
+        <div class="list card">
+            <label class="item item-input">
+                <span class="input-label">Number</span>
+                <input type="tel">
+            </label>
+        </div>
+        <input type="hidden" value="{{deviceDetails.Cordova}}" />
+        <button id="signup_button" class="button button-positive" ng-click="goToContactsView()">
+            OK
+        </button>
+    </ion-content>
+</ion-view>
