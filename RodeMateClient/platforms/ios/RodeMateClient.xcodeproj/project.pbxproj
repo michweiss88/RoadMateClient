@@ -40,6 +40,8 @@
 		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		CC4240C5953741CCAC1D9CB6 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A828D9B46D44408AF65768E /* CDVDevice.m */; };
+		2AA1F7407CAF4894A1EB081B /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = A88CEF773F7B4A1497E4B451 /* CDVLocation.m */; };
+		A4E9BC26563144CCB563BD46 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D27787A91F45DAAB18DE15 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,9 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "RodeMateClient/config.xml"; sourceTree = "<group>"; };
 		1A828D9B46D44408AF65768E /* CDVDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVDevice.m"; path = "org.apache.cordova.device/CDVDevice.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		48E8110342F640CDA1D542C7 /* CDVDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVDevice.h"; path = "org.apache.cordova.device/CDVDevice.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		A88CEF773F7B4A1497E4B451 /* CDVLocation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVLocation.m"; path = "org.apache.cordova.geolocation/CDVLocation.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		204066A3D54D4AC1A89FB3D8 /* CDVLocation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVLocation.h"; path = "org.apache.cordova.geolocation/CDVLocation.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		27D27787A91F45DAAB18DE15 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "CoreLocation.framework"; path = "System/Library/Frameworks/CoreLocation.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,7 @@
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
 				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
+				A4E9BC26563144CCB563BD46 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +196,7 @@
 				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				27D27787A91F45DAAB18DE15 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,6 +214,8 @@
 			children = (
 				1A828D9B46D44408AF65768E /* CDVDevice.m */,
 				48E8110342F640CDA1D542C7 /* CDVDevice.h */,
+				A88CEF773F7B4A1497E4B451 /* CDVLocation.m */,
+				204066A3D54D4AC1A89FB3D8 /* CDVLocation.h */,
 			);
 			name = Plugins;
 			path = "RodeMateClient/Plugins";
@@ -392,6 +401,7 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				CC4240C5953741CCAC1D9CB6 /* CDVDevice.m in Sources */,
+				2AA1F7407CAF4894A1EB081B /* CDVLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

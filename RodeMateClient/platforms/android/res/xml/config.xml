@@ -28,4 +28,5 @@
     <vs:plugin name="org.apache.cordova.device" version="0.3.0" />
     <preference name="target-device" value="handset" />
     <preference name="BackupWebStorage" value="local" />
+    <vs:plugin name="org.apache.cordova.geolocation" version="0.3.12" />
 </widget>

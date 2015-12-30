@@ -54,4 +54,7 @@
     <vs:plugin name="org.apache.cordova.device" version="0.3.0" />
     <preference name="target-device" value="handset" />
     <preference name="BackupWebStorage" value="local" />
+    <feature name="Geolocation">
+        <param name="ios-package" value="CDVLocation" />
+    </feature>
 </widget>
