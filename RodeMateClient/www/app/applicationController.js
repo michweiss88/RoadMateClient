@@ -9,6 +9,7 @@
     };
 
     var watch = $cordovaGeolocation.watchPosition(watchOptions);
+    $scope.GeoServiceWatch = watch;
     watch.then(
       null,
       function (err) {
@@ -17,8 +18,13 @@
       function (position) {
           var lat = position.coords.latitude
           var long = position.coords.longitude
+          $scope.speed = position.coords.speed;
+          console.log($scope.speed)
       });
-
+    $scope.StopGoeService = function()
+    {
+        $scope.GeoServiceWatch.clearWatch();
+    }
    // watch.clearWatch();
     //$cordovaGeolocation.clearWatch(watch)
     //  .then(
