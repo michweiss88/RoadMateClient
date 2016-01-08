@@ -26,7 +26,7 @@
     <preference name="windows-target-version" value="8.1" />
     <preference name="windows-phone-target-version" value="8.1" />
     <vs:plugin name="org.apache.cordova.device" version="0.3.0" />
-    <preference name="target-device" value="handset" />
+    <preference name="target-device" value="universal" />
     <preference name="BackupWebStorage" value="local" />
     <vs:plugin name="org.apache.cordova.geolocation" version="0.3.12" />
 </widget>
