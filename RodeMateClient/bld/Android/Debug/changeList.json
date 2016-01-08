@@ -146,7 +146,10 @@
     "plugins\\org.apache.cordova.device\\plugin.xml",
     "res\\icons\\windows\\Square44x44Logo.scale-240.png",
     "res\\screens\\android\\screen-mdpi-portrait.png",
-    "npm-debug.log"
+    "npm-debug.log",
+    "www\\services\\api_service.js",
+    "www\\services\\auth_service.js",
+    "www\\services\\shared.js"
   ],
   "deletedFilesIos": [],
   "addedPluginsIos": [
@@ -155,7 +158,13 @@
   ],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "npm-debug.log"
+    "www\\services\\api_service.js",
+    "www\\services\\auth_service.js",
+    "www\\services\\shared.js",
+    "www\\js\\services.js",
+    "www\\js\\constants.js",
+    "www\\index.html",
+    "www\\app\\users\\usersController.js"
   ],
   "deletedFiles": [],
   "addedPlugins": [],
