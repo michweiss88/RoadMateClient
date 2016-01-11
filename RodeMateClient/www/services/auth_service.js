@@ -54,7 +54,8 @@ angular.module('starter')
     });
   };
 
-  var signup = function(deviceDetails, phoneNumber) {
+  var signup = function (deviceDetails, phoneNumber) {
+      console.log(SERVER_API_URL + '/users.json')
     return $q(function(resolve, reject) {
       $http({
         url: SERVER_API_URL + '/users.json',
