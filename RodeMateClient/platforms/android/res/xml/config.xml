@@ -4,6 +4,13 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />
     </feature>
+    <feature name="Contacts">
+        <param name="android-package" value="org.apache.cordova.contacts.ContactManager" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
     <icon density="ldpi" src="res/icons/android/icon-36-ldpi.png" />
     <icon density="mdpi" src="res/icons/android/icon-48-mdpi.png" />
     <icon density="hdpi" src="res/icons/android/icon-72-hdpi.png" />
@@ -29,4 +36,6 @@
     <preference name="target-device" value="universal" />
     <preference name="BackupWebStorage" value="local" />
     <vs:plugin name="org.apache.cordova.geolocation" version="0.3.12" />
+    <vs:plugin name="org.apache.cordova.contacts" version="" />
+    <vs:plugin name="org.apache.cordova.file" version="1.3.3" />
 </widget>

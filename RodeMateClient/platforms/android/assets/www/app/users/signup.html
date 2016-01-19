@@ -6,11 +6,10 @@
         <div class="list card">
             <label class="item item-input">
                 <span class="input-label">Number</span>
-                <input type="tel">
+                <input type="tel" ng-model="phoneNumber">
             </label>
         </div>
-        <input type="hidden" value="{{deviceDetails.Cordova}}" />
-        <button id="signup_button" class="button button-positive" ng-click="goToContactsView()">
+        <button id="signup_button" class="button button-positive" ng-click="signUp(phoneNumber)">
             OK
         </button>
     </ion-content>

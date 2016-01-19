@@ -94,4 +94,6 @@
   <preference name="target-device" value="universal" />
   <preference name="BackupWebStorage" value="local" />
   <vs:plugin name="org.apache.cordova.geolocation" version="0.3.12" />
+  <vs:plugin name="org.apache.cordova.contacts" version="" />
+  <vs:plugin name="org.apache.cordova.file" version="1.3.3" />
 </widget>

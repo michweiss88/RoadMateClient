@@ -19,7 +19,7 @@
           var lat = position.coords.latitude
           var long = position.coords.longitude
           $scope.speed = position.coords.speed;
-          console.log($scope.speed)
+          //console.log($scope.speed)
       });
     $scope.StopGoeService = function()
     {
