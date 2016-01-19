@@ -3,10 +3,12 @@
 .controller('SignupController', function ($scope, $state, $cordovaDevice,$cordovaContacts,$cordovaFile, AuthService, SharedMethods, CONTACTS_CONFIG) {
 
     $scope.signUp = function (phoneNumber) {
+        $state.go('tab.contacts');
+        return;
         if (phoneNumber) {
             SharedMethods.showLoader();
             AuthService.signup($scope.deviceDetails, phoneNumber).then(function (authenticated_msg) {
-                $state.go('tab.account');
+                $state.go('tab.contacts');
                 SharedMethods.closeLoader();
             }, function (error_message) {
                 SharedMethods.closeLoader();
